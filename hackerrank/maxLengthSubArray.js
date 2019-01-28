@@ -8,10 +8,10 @@ const maxLength = (arr, k) => {
     if (sum + arr[i] <= k) {
       sum += arr[i];
       count++;
+      maxCount = Math.max(maxCount, count);
     } else if (sum !== 0) {
       sum = sum - arr[i - count] + arr[i];
     }
-    maxCount = Math.max(maxCount, count);
   }
   return maxCount;
 };
