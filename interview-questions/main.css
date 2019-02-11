@@ -1,0 +1,19 @@
+div{
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.q1-1{
+  background-color: salmon;
+}
+.q1-2{
+  background-color: sandybrown;
+}
+
+.q1-1__left, .q2-1__right, .q1-2__left, .q1-2__center, .q1-2__right{
+  width: 200px;
+  height: 50px;
+  background-color: aquamarine;
+}
+
+/* Write your code below */
