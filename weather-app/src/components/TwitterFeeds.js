@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const TwitterFeed = props => (
-  <div id="twitter-feeds">
-    <div>:) Twitter #city</div>
+const NewsFeed = props => (
+  <div id="news-feed">
+    <div>:) News #city</div>
     <div>data... data...</div>
     <div>Next</div>
   </div>
 );
 
-export default TwitterFeed;
+export default NewsFeed;
