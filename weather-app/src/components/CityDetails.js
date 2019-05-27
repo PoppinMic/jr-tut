@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./CityDetails.module.css";
+import styles from "./CityDetails.module.scss";
 
 const CityDetails = props => {
   return (

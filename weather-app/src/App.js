@@ -3,7 +3,7 @@ import CityDetails from "./components/CityDetails";
 import TwitterFeed from "./components/TwitterFeeds";
 import { Forecast } from "./components/Forecast";
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
