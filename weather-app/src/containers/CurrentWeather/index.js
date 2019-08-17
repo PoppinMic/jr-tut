@@ -11,7 +11,7 @@ class CurrentWeather extends Component{
     console.log(res)
   }
 
-  redner(){  
+  render(){  
     return (
     <div>
       Current Weather
