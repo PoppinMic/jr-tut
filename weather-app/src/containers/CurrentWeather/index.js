@@ -1,24 +1,31 @@
-import React, {Component} from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
+import styled from 'styled-components';
 
-import {WEATHER_API_KEY} from '../../keys'
-import { CURRENT_WEATHER } from '../../endPoints';
+import { WEATHER_API_KEY } from "../../keys";
+import { CURRENT_WEATHER } from "../../endPoints";
+import DetailWeather from "./DetailWeather";
+import City from "./City";
 
-const CITY = 'Sydney,au'
-class CurrentWeather extends Component{
-  async componentDidMount(){
-    const res = await axios.get(`${CURRENT_WEATHER}?q=${CITY}&APPID=${WEATHER_API_KEY}`)
-    console.log(res)
-  }
+const Wrapper = styled.div`
+  background: green;
+`
 
-  render(){  
+const CITY = "Sydney,au";
+class CurrentWeather extends Component {
+  // async componentDidMount(){
+  //   const res = await axios.get(`${CURRENT_WEATHER}?q=${CITY}&APPID=${WEATHER_API_KEY}`)
+  //   console.log(res)
+  // }
+
+  render() {
     return (
-    <div>
-      Current Weather
-    </div>
-  );
-}
-
+      <Wrapper>
+        <DetailWeather />
+        <City />
+      </Wrapper>
+    );
+  }
 }
 
 export default CurrentWeather;
